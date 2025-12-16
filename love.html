@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For You</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Luxury fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<!-- Hidden dedication -->
+<!-- Made quietly for: HER_OR_HIS_NAME -->
+</head>
+<body>
+
+<!-- Floating Hearts -->
+<div class="hearts">
+  <span class="heart" style="left:15%">❤</span>
+  <span class="heart" style="left:35%">❤</span>
+  <span class="heart" style="left:55%">❤</span>
+  <span class="heart" style="left:75%">❤</span>
+</div>
+
+<!-- PASSWORD UNLOCK -->
+<input type="checkbox" id="unlock">
+
+<div class="lock-screen">
+  <h2>Private Letter</h2>
+  <p>This page was made for one person only.</p>
+  <label for="unlock" class="btn">Unlock</label>
+</div>
+
+<div class="content">
+
+<!-- PAGE 1 -->
+<section id="page1" class="page">
+  <h1 class="typewriter">Dear You,</h1>
+
+  <p>
+    This looks like a normal letter.<br>
+    But it was written slowly, with intention.
+  </p>
+
+  <a href="#page2" class="btn">Continue</a>
+</section>
+
+<!-- PAGE 2 -->
+<section id="page2" class="page">
+  <p>
+    Somewhere between ordinary days<br>
+    and quiet moments,<br>
+    you became important to me.
+  </p>
+
+  <!-- Secret message -->
+  <input type="checkbox" id="secret-toggle">
+  <label for="secret-toggle" class="btn outline">Reveal something private</label>
+
+  <div class="secret">
+    <p>
+      I didn’t plan to feel this way.<br>
+      It just happened — naturally.
+    </p>
+  </div>
+
+  <a href="#page3" class="btn">Continue</a>
+</section>
+
+<!-- PAGE 3 -->
+<section id="page3" class="page">
+
+  <!-- Date based reveal (locked until you change CSS) -->
+  <div class="date-locked">
+    <p>This part opens on a special day 💫</p>
+  </div>
+
+  <div class="date-unlocked">
+    <p>
+      I don’t expect anything from this.<br>
+      I only wanted you to know how I feel.
+    </p>
+  </div>
+
+  <!-- Music -->
+  <input type="checkbox" id="music-toggle">
+  <label for="music-toggle" class="btn outline">Play music</label>
+
+  <audio loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <p class="signature">— Someone who cares</p>
+</section>
+
+</div>
+</body>
+</html>
